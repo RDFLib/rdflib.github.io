@@ -76,11 +76,15 @@ See <https://rdflib.readthedocs.io> for our documentation built from the code.
 
 **Release** | **Date** | **Note**
 --- | --- | ---
-*6.2.0-alpha* | *Feb 2022 (expected)* | *Current [`master` branch in GitHub](https://github.com/RDFLib/rdflib/)* <br />Documentation: [readthedocs/latest](https://rdflib.readthedocs.io/en/latest/)
-**6.1.1** | **12 Dec 2021** | **Current stable release**<br />Release of `master` as of 12 Dec 2021. Current `master`<br />Documentation: [readthedocs/stable](https://rdflib.readthedocs.io/en/stable/)
-6.0.2 | 10 Oct 2021 | Minor stable release<br />Release of `master` as of 10 Oct 2021. Current `master`<br />
-6.0.1 | 17 Sept 2021 | Minor stable release<br />Release of `master` as of 17 Sept 2021. Current `master`<br />Documentation: [readthedocs/6.0.1](https://rdflib.readthedocs.io/en/6.0.1/)
-6.0.0 | 20 July 2021 | Major stable release<br />Release of `master` as of 20 July 2021<br />Documentation: [readthedocs/6.0.0](https://rdflib.readthedocs.io/en/6.0.0/)
+**7.0.0** | **01 Aug 2023** | **Major Stable release**<br /> Current [`master` branch in GitHub](https://github.com/RDFLib/rdflib/)* <br />Documentation: [readthedocs/latest](https://rdflib.readthedocs.io/en/latest/)
+6.3.2 | 26 Mar 2023 | Patch Stable release<br /> Release of `master` as of 26 Mar 2023. <br />Documentation: [readthedocs/6.3.2](https://rdflib.readthedocs.io/en/6.3.2/)
+6.3.1 | 18 Mar 2023 | Patch Stable release<br /> Release of `master` as of 18 Mar 2023. <br />Documentation: [readthedocs/6.3.1](https://rdflib.readthedocs.io/en/6.3.1/)
+6.3.0 | 16 Mar 2023 | Minor Stable release<br /> Release of `master` as of 16 Mar 2023. <br />Documentation: [readthedocs/6.3.0](https://rdflib.readthedocs.io/en/6.3.0/)
+6.2.0 | 16 Jul 2022 | Minor Stable release<br /> Release of `master` as of 16 Jul 2022. <br />Documentation: [readthedocs/6.2.0](https://rdflib.readthedocs.io/en/6.2.0/)
+6.1.1 | 12 Dec 2021 | Minor Stable release<br />Release of `master` as of 12 Dec 2021. <br />Documentation: [readthedocs/stable](https://rdflib.readthedocs.io/en/6.1.1/)
+6.0.2 | 10 Oct 2021 | Patch stable release<br />Release of `master` as of 10 Oct 2021. <br />Documentation: [readthedocs/6.0.1](https://rdflib.readthedocs.io/en/6.0.2/)
+6.0.1 | 17 Sep 2021 | Patch stable release<br />Release of `master` as of 17 Sep 2021. <br />Documentation: [readthedocs/6.0.1](https://rdflib.readthedocs.io/en/6.0.1/)
+6.0.0 | 20 Jul 2021 | Major stable release<br />Release of `master` as of 20 Jul 2021. <br />Documentation: [readthedocs/6.0.0](https://rdflib.readthedocs.io/en/6.0.0/)
 5.0.0 | 18 Apr 2020 | Previous stable release<br />Release of `master` contents as of 18 Apr 2020<br />Last release with Python 2 & 3.4 support<br />Documentation: [readthedocs/5.0.0](https://rdflib.readthedocs.io/en/5.0.0/)
 5.0.0RC1 | 04 Apr 2020 | This was a pre-release of all changes in `master` as of 04 Apr 2020
 4.2.2 | 30 Jan 2017 | Previous stable release<br />Documentation: [readthedocs/4.2.2](https://rdflib.readthedocs.io/en/4.2.2/)
