@@ -1,6 +1,6 @@
 ![](images/RDFlib-250.png)
 
-# rdflib.github.io website
+# rdflib.dev website
 
 This repository contains the source for the simple website <https://rdflib.dev> which is the home page of the [RDFlib](https://github.com/RDFLib/)
 family of Python tools for working with [RDF](https://www.w3.org/RDF/)
