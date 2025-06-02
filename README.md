@@ -11,4 +11,4 @@ the deed. Note Citation below though for attribution.
 
 ## Contacts
 Please contact the core [RDFlib maintainers](https://github.com/rdflib/rdflib#contacts) for any issues related to this 
-repository the the website it supports.
+repository the website it supports.

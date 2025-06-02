@@ -6,20 +6,42 @@ permalink: /
 ![](images/RDFlib-250.png)
 
 # RDFlib
-RDFLib is a pure Python package for working with [RDF](http://www.w3.org/RDF/). RDFLib contains most things you need to work with RDF, including:
 
-* parsers and serializers for RDF/XML, N3, NTriples, N-Quads, Turtle, TriX, Trig, JSON-LD and even HexTuples
-* a Graph interface which can be backed by any one of a number of Store implementations
-* Store implementations for in-memory, persistent on disk (Berkeley DB) and remote SPARQL endpoints
-    * additional Stores can be supplied via plugins 
-* a SPARQL 1.1 implementation - supporting SPARQL 1.1 Queries and Update statements
-* SPARQL function extension mechanisms
+[RDFLib](https://github.com/RDFLib), is a volunteer-run GitHub organization that maintains is a collection of Python tools for working with RDF data,
+principally the [rdflib](https://github.com/RDFLib/rdflib) package.
 
-Many 3rd party packages support additional Stores, parsers etc.
+<!---
+## Charter
+[//]: #
+The RDFLib group operated under a Charter that guides our actions. You can read the Charter here:
+[//]: #
+* [RDFLib Charter](charter.md)
+-->
 
-## RDFLib Family of packages
-The RDFLib community maintains many RDF-related Python code repositories with different purposes. Most of the currently
-operating packages are shown here:
+## rdflib package
+
+The main tool is the [rdflib](https://github.com/RDFLib/rdflib) 
+package which contains most of the things you need to work with RDF, including:
+
+* **parsers and serializers*
+    * for RDF/XML, N3, NTriples, N-Quads, Turtle, TriX, Trig, JSON-LD and even HexTuples
+* **Graph interface**
+    * which can be backed by any one of a number of Store implementations
+* **Store implementations**
+    * for in-memory, persistent on disk (Berkeley DB) and remote SPARQL endpoints
+* **SPARQL 1.1 implementation**
+    * supporting SPARQL 1.1 Queries & Updates
+    * SPARQL function extension mechanisms
+* **SPARQL results wrapping**
+    * turning SPARQL results from file graphs or SPARQL Endpoints into Python objects
+    * formerly a stand-alone package, [SPARQLWrapper](https://github.com/RDFLib/sparqlwrapper/) the main rdflib package now does everything it did
+
+Many 3rd party packages support additional Stores, parsers etc. via a **plugins** interface, e.g. HTD scalable, 
+read-only storage. 
+
+## Other RDFLib packages
+
+The other RDFLib repositories are shown in logos or green relating to rdflib's internal modules in blue:
 
 ![](images/rdflib-packages.png)  
 
@@ -31,20 +53,17 @@ operating packages are shown here:
        * [rdflib-sqlalchemy](https://github.com/RDFLib/rdflib-sqlalchemy) - RDFLib store using SQLAlchemy dbapi as back-end
        * [rdflib-hdt](https://github.com/RDFLib/rdflib-hdt) - A Store back-end for rdflib to allow for reading and querying HDT documents
        * [rdflib-zodb](https://github.com/RDFLib/rdflib-zodb) - RDFLib Store backed by ZODB3
-       * [rdflib-kyotocabinet](https://github.com/RDFLib/rdflib-kyotocabinet) - RDFLib Store backed by Kyoto Cabinet
        * [rdflib-leveldb](https://github.com/RDFLib/rdflib-leveldb) - A LevelDB based Store for rdflib 
     * 3rd party:
        * [Neo4J](https://github.com/neo4j-labs/rdflib-neo4j) - using Neo4J as a back-end. Even support RDF-Star
 
 * **Parsers/Serializers**:
    * RDFLib:
-       * [pymicrodata](https://github.com/RDFLib/pymicrodata) - This a module to extract RDF from an HTML5 page annotated with microdata (archived)
-       * [pyrdfa3](https://github.com/RDFLib/pyrdfa3) - RDFa 1.1 distiller/parser library: can extract RDFa 1.1 (and RDFa 1.0, if properly set via a @Version attribute) from (X)HTML, SVG, or XML (archived)
+     * RDF/XML, JSON-LD, Turtle/N# - built in to rdflib
+     * [pymicrodata](https://github.com/RDFLib/pymicrodata) - This a module to extract RDF from an HTML5 page annotated with microdata (archived)
+     * [pyrdfa3](https://github.com/RDFLib/pyrdfa3) - RDFa 1.1 distiller/parser library: can extract RDFa 1.1 (and RDFa 1.0, if properly set via a @Version attribute) from (X)HTML, SVG, or XML (archived)
    * 3rd party:
        * [FunOWL](https://github.com/hsolbrig/funowl) - Functional Syntax
-
-* **SPARQL tools**:
-    * [sparqlwrapper](https://github.com/RDFLib/sparqlwrapper) - a simple Python wrapper around a SPARQL service to remotely execute your queries
 
 * **OWL Reasoning & Documentation**:    
     * [OWL-RL](https://github.com/RDFLib/OWL-RL) - A simple implementation of the OWL2 RL Profile on top of RDFLib
@@ -55,6 +74,7 @@ operating packages are shown here:
 
 * **Linked Data APIs**:
     * [Prez](https://github.com/RDFLib/prez) - A data-configurable Linked Data API framework that delivers profiles of Knowledge Graph data according to the [Content Negotiation by Profile](https://w3c.github.io/dx-connegp/connegp/) standard
+    * [Prez-UI](https://github.com/RDFLib/prez-ui) - a [Vue.js](https://vuejs.org/) front-end for Prez
 
 Please see the list of all packages here:
 
@@ -63,14 +83,14 @@ Please see the list of all packages here:
 
 ## Documentation
 
-RDFLib's code repository, <https://github.com/rdflib/rdflib/>, contains some intro documentation in it's README page, 
+The main source of RDFLib documentation is online at <https://rdflib.readthedocs.io>. That contains pages handwritten 
+by RDFLib contributors and also auto-generated pages from the rdflib code.
+
+RDFLib's code repository, <https://github.com/rdflib/rdflib/>, also contains some intro documentation in its README page, 
 which is replicated to RDFLib's PyPI page, <https://pypi.org/project/rdflib/>.
 
 RDFLib also contains a set of documented examples in the [`example/`](https://github.com/RDFLib/rdflib/tree/main/examples)
 folder within the code repository.
-
-However, the main source of RDFLib documentation is online at <https://rdflib.readthedocs.io>. That contains pages hand written 
-by RDFLib contributors and auto-generated pages from the RDFLib codes.
 
 
 ## Releases
@@ -80,7 +100,8 @@ some major historical releases of RDFLib are:
 
 | **Release** | **Date**    | **Note**                                                                                  |
 |-------------|-------------|-------------------------------------------------------------------------------------------|
-| 7.1.3       | 10 Jan 2025 | Minor updates on 7.0.0 including deterministic serialisation, improved type hinting etc.  |
+| 8.x         | --          | Current `main` branch, unstable release. Due for a major v8 release in July - Spet. 2025  |
+| 7.1.4       | 26 Mar 2025 | Minor updates on 7.0.0 including deterministic serialisation, improved type hinting etc.  |
 | 7.0.0       | 02 Aug 2023 | A major release with relatively slight breaking changes, new features and bug fixes       |
 | 6.0.0       | 20 Jul 2021 | The next major update with lots of auto-update PRs from dependabot etc                    |
 | 5.0.0       | 18 Apr 2020 | The first update in many years. Very compatible with 4.2.2                                |
