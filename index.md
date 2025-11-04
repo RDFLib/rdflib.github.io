@@ -94,13 +94,16 @@ folder within the code repository.
 
 
 ## Releases
-7.1.3 is the current release (Jan, 2025) and a major release of a version 8 is expected in the first half of 2025.
+7.4.0 is the current release (Nov, 2025) and a major release of a version 8 is expected at the end of 2025.
 
 some major historical releases of RDFLib are:
 
 | **Release** | **Date**    | **Note**                                                                                  |
 |-------------|-------------|-------------------------------------------------------------------------------------------|
-| 8.x         | --          | Current `main` branch, unstable release. Due for a major v8 release in July - Spet. 2025  |
+| 8.x         | --          | Current `main` branch, unstable release. Due for a major v8 release in late 2025          |
+| 7.4.0       | 30 Oct 2025 | Added support for Python 3.12 - 3.14 testing; moved to new MKDocs documentation           |
+| 7.3.0       | 24 Oct 2025 | Fixed some long-standing Dataset issues and added deprecation notices for v8 removal      |
+| 7.2.1       | 19 Sep 2025 | Minor release to fix automated builting and some small code fixes                         |
 | 7.1.4       | 26 Mar 2025 | Minor updates on 7.0.0 including deterministic serialisation, improved type hinting etc.  |
 | 7.0.0       | 02 Aug 2023 | A major release with relatively slight breaking changes, new features and bug fixes       |
 | 6.0.0       | 20 Jul 2021 | The next major update with lots of auto-update PRs from dependabot etc                    |
